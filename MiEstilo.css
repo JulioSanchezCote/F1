@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  margin:-10px;
+}
+
+/* Menu */
+.navbar {
+  margin: 0px;
+  overflow: hidden;
+  background-color: red;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #DCE2EA;
+  color: black;
+}
+
+
+.navbar a.active {
+  background-color: White;
+  color: black;
+}
+
+
+/* Menu Ferrari */
+.navbarF {
+  margin: 0px;
+  overflow: hidden;
+  background-color: red;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbarF a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbarF a.right {
+  float: right;
+}
+
+.navbarF a:hover {
+  background-color: #000000;
+  color: whites;
+}
+
+
+.navbarF a.active {
+  background-color: yellow;
+  color: black;
+}
+
+/* Menu AstonMartin */
+.navbarAM {
+  margin: 0px;
+  overflow: hidden;
+  background-color: green;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbarAM a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbarAM a.right {
+  float: right;
+}
+
+.navbarAM a:hover {
+  background-color: #66E59D;
+  color: black;
+}
+
+
+.navbarAM a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Menu Mercedes */
+.navbarM {
+  margin: 0px;
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbarM a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbarM a.right {
+  float: right;
+}
+
+.navbarM a:hover {
+  background-color: #D8E1DF;
+  color: white;
+}
+
+
+.navbarM a.active {
+  background-color: #2EB780;
+  color: white;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.footerFerrari {
+  padding: 20px;
+  text-align: center;
+  background: #F02435;
+}
+
+.footerAstonMartin {
+  padding: 20px;
+  text-align: center;
+  background: #2EB780;
+}
+
+.footerMercedes {
+  padding: 20px;
+  text-align: center;
+  background: #E9E8EC;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
